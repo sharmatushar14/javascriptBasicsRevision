@@ -7,6 +7,7 @@ if(score > 30){
 if(score > 33) console.log(`Need to work hard`)
 
 //Switch Case for Redux Management-->React JS
+//In Switch if not using break, then all cases will be executed after switch match except default
 //Falsy Values-->Which are considered to be false
 //false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
@@ -33,8 +34,8 @@ console.log(false==""); //True
 console.log(0==""); //True
 console.log(false==null) //False
 console.log(false==undefined); //False
-console.log(0==null);
-console.log(0==undefined);
+console.log(0==null); //False
+console.log(0==undefined); //False
 
 //Nullish Coalescing Operator (??): null undefined
 //If we are getting null//undefined value from database/user respone, so that the safety is applied on the code
@@ -45,3 +46,7 @@ val1= 5 ?? 10
 val1= null ?? 20
 val1= null ?? 10 ?? 20
 console.log(val1);
+
+//Terniary Operator is different thing
+// condition ? true : false
+
