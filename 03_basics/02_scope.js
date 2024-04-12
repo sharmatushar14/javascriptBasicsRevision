@@ -17,3 +17,14 @@ console.log(test1)
 console.log(test2)
 console.log(test3)
 
+// Mini Hoisting Revision
+addOne(2) //This will be able to give the output
+function addOne(num){
+    return num+1
+}
+
+//This will not give the output
+addTwo(2) // Cannot access 'addTwo' before initialization as we assigned the function to the variable
+const addTwo = function(num){
+    return num+2
+}
