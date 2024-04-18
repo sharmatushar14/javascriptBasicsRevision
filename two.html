@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: aqua;">   
+</body>
+<script>
+    const div= document.createElement('div')
+    console.log(div);
+    div.className='main'
+    div.id=Math.round(Math.random()*10+1)
+    div.style.backgroundColor="green"
+    div.style.padding='12px'
+    // div.innerText='Hello there'
+    //Debatable topic to discuss that which way is optmized to create text node
+    const addText= document.createTextNode("Practice")
+    const heading= document.createElement('h1')
+    heading.textContent='Testing'
+    div.appendChild(heading)
+    div.appendChild(addText)
+    document.body.appendChild(div)
+</script>
+</html>
