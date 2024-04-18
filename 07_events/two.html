@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Events Practice
+    </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //If the syntax takes handler as the parameter, then we give reference of the function or the call back function
+    setTimeout(function(){
+        console.log('Tushar');
+    }, 2000)
+
+    const changeText= function(){
+        document.querySelector('h1').innerHTML='Hey There User'
+    }
+    const changeMe= setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', ()=>{
+        clearTimeout(changeMe)
+        console.log('Stopped');
+    })
+</script>
+</html>
