@@ -57,6 +57,7 @@ const TASupport = {
 console.log(TASupport.isAvailable); //O: False, hence we can access the props of the Teaching Support too 
 
 Teacher.__proto__ = User
+//Means Teacher as taken all properties of the User
 console.log(Teacher.name); //Tushar
 
 // modern syntax
